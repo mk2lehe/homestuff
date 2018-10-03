@@ -18,3 +18,8 @@ spotify on wifi-laptop can see all devices(!).
 ? Spotify on laptop does not use dns-sd as service discovery browser? 
 
 ? Either 
+
+enabling mdns reflector makes it possible to 
+H:>ping -4 ubnt.local
+https://www.reddit.com/r/Ubiquiti/comments/6wxdhw/edgerouter_local_hostname/ 
+It also seems to help for discovery (?)
