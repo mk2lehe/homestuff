@@ -1,5 +1,18 @@
 # homestuff
 
+Upnp discovery:
+
+http://www.upnp-hacks.org/upnp.html 
+
+1. upnp discovery browser sends SSDP to 239.255.255.250:1900 on UDP
+* works across subnets, tested with wireshark: ssdp && (ip.src == 192.168.2.106 && ip.addr == 239.255.255.250 ) where 192.168.2.106 is android phone running upnp browser
+2. all upnp devices responds using udp unicast.
+* works across subnets
+3. port 80 works:
+http://192.168.2.120/ajax/upnp/get_device_info
+Somehow, network devices in win still don't work on different subnets
+
+
 Source: http://divideoverflow.com/2014/08/reversing-spotify-connect/
 
 Spotify connect devices advertises itself via Zeroconf (avahi-publish) as a local _spotify-connect._tcp service, which runs a simple HTTP service.
