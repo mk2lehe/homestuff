@@ -36,3 +36,5 @@ enabling mdns reflector makes it possible to
 H:>ping -4 ubnt.local
 https://www.reddit.com/r/Ubiquiti/comments/6wxdhw/edgerouter_local_hostname/ 
 It also seems to help for discovery (?)
+
+4. Enable igmp-proxy (config tree) with switch0(LAN) as upstram and switch0.55(VLAN) downstream makes controller app (LAN) find VLAN devices
