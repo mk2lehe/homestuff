@@ -40,3 +40,7 @@ It also seems to help for discovery (?)
 4. Enable igmp-proxy (config tree) with switch0(LAN) as upstram and switch0.55(VLAN) downstream makes controller app (LAN) find VLAN devices
 
 5. Disable "Only show local wifi or ethernet devices" in spotify settings
+
+
+show ip multicast mfc
+show ip multicast interfaces
